@@ -1,17 +1,17 @@
-.content {
+#content {
     margin: 0px auto;
     display: flex;
     flex-direction: column-reverse;
 }
 
-.gallery {
+#gallery {
     width: 100%;
     display: flex;
     flex-direction: column;
     overflow: auto;
 }
 
-.wrapper {
+#wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -105,24 +105,25 @@
 
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
-    .content {
+    #content {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .gallery {
-        width: 30%;
-        height: 800px;
+    #gallery {
+        width: 35%;
+        height: 600px;
     }
 
-    .wrapper {
-        width: 70%;
+    #wrapper {
+        width: 55%;
+        min-height: 600px;
     }
 }
 
 /* Big screens */
 @media only screen and (min-width: 1400px) {
-    .content{
+    #content{
         width: 1400px;
     }
 }

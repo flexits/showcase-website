@@ -27,23 +27,23 @@ header, footer {
     color: var(--cornsilk);
 }
 
-.header {
+#head-content {
     padding: 10px;
     margin-bottom: 64px;
 }
 
-.header > h1 {
+#head-content > h1 {
     color: var(--cornsilk);
     text-align: center;
 }
 
-.footer {
+#foot-content {
     padding: 10px;
     margin-top: 64px;
     font-size: smaller;
 }
 
-.footer a{
+#foot-content a{
     color: var(--cornsilk);
 }
 
@@ -55,7 +55,7 @@ header, footer {
 
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
-    .header > h1{
+    #head-content > h1{
         padding-left: 10%;
         text-align: left;
     }
