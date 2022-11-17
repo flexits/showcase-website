@@ -10,13 +10,42 @@
 </head>
 
 <body>
+    <script>
+      function openTab(tabId) {
+        var i, x;
+        x = document.getElementsByClassName("textcontainer");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(tabId).style.display = "inline-block";
+      }
+    </script>
+
     <header><div class="header"><h1>The Legacy Showcase</h1></div></header>
 
-    <!-- TODO header containing the item name and a button to return back: index.html#item1 -->
-    <!-- TODO image gallery-->
-    <!-- TODO text content tabbed (show/hide div by clicking tab)-->
-
-    <main></main>
+    <main>
+      <div class="content">
+        <div class="gallery"><p>This is gallery</p></div> <!-- TODO image gallery-->
+        <div class="wrapper">
+          <div class="navbar">
+            <div class="nav">
+              <button class="btn-back" onclick="location.href='index.html#item1';"><img src="img/back.png"></button>
+              <h3>WindRover LP2001</h3>
+            </div>
+            <div class="tabcontrols">
+              <button class="btn-tab" onclick="openTab('nfo');"><img src="img/book.png"></button>
+              <button class="btn-tab" onclick="openTab('fls');"><img src="img/down.png"></button>
+            </div>
+          </div>
+          <div class="textcontainer" id="nfo">
+            <p>This chapter provides step-by-step instructions for disassembling parts and subsystems. When it comes to reassembly, reverse the procedures (unless otherwise indicated). All the procedures apply to both the LP200C and LP200T unless otherwise specified. We suggest you completely review any procedure before you take the computer apart.</p>
+          </div>
+          <div class="textcontainer" id="fls" style="display: none;">
+            <p>This is filescontainer</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer><div class="footer"><p>Alexander Korostelin, 2022</p></div></footer>
 </body>

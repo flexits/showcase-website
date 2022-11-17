@@ -1,0 +1,88 @@
+.content {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.gallery {
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav > * {
+    padding-left: 10px;
+}
+
+[class^="btn"] {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    background-color: transparent;
+    padding: 8px 24px;
+    /*font-size: 12px;*/
+    /*border: 1px solid var(--olive-green);
+    border-radius: 4px;*/
+    border: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+[class^="btn"]:hover {
+    background-color: var(--olive-green);
+    color: var(--cornsilk);
+}
+
+.btn-back {
+    padding: 8px 0px;
+}
+
+.textcontainer {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* Non-mobile screens */
+@media only screen and (min-width: 600px) {
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .gallery {
+        width: 40%;
+    }
+
+    .wrapper {
+        width: 60%;
+    }
+}
+
+/* Big screens */
+@media only screen and (min-width: 1400px) {
+    .content{
+        width: 1400px;
+    }
+}
+
