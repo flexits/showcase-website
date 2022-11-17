@@ -87,9 +87,21 @@
 
 .textcontainer {
     margin-top: 20px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
+.textcontainer table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.textcontainer table tr:nth-child(even) {
+    background-color: var(--corn-darker);
+}
+
+.textcontainer table tr td:first-child {
+    padding-left: 20px;
+}
 
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
