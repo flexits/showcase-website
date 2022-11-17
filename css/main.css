@@ -29,7 +29,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  float: left;
   background-color: white;
   border: 1px solid var(--olive-green);
   border-radius: 5px;
@@ -39,10 +38,6 @@
   height: 240px;
   cursor: pointer;
 }
-
-/*.card > h3 {
-  color: var(--dogs-brown);
-}*/
 
 .card:hover{
   box-shadow: none;
@@ -56,16 +51,6 @@
   width: 50%;
   margin-right: 20px;
 }
-
-/*.cardbtn{
-  float: right;
-  margin-right: 20px;
-  background-color: var(--cornsilk);
-  color: var(--kombu-green);
-  border: 1px solid var(--olive-green);
-  cursor: pointer;
-  width: 45px;
-}*/
 
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
