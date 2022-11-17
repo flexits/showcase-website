@@ -39,6 +39,11 @@ header, footer {
 .footer {
     padding: 10px;
     margin-top: 64px;
+    font-size: smaller;
+}
+
+.footer a{
+    color: var(--cornsilk);
 }
 
 .clearfix::after {

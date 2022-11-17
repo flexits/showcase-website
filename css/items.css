@@ -6,14 +6,41 @@
 
 .gallery {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
 }
 
 .wrapper {
     width: 100%;
-    min-height: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.imgcontainer {
+    border: 1px solid var(--olive-green);
+}
+
+.imgcontainer > a > img {
+    object-fit: scale-down;
+    width: 100%;
+}
+
+.imgoverlay {
+    /*position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.imgcontainer:hover .imgoverlay {
+    height: 30%;
 }
 
 .navbar {
@@ -40,12 +67,13 @@
     display: inline-block;
     background-color: transparent;
     padding: 8px 24px;
-    /*font-size: 12px;*/
-    /*border: 1px solid var(--olive-green);
-    border-radius: 4px;*/
     border: none;
     transition-duration: 0.3s;
     cursor: pointer;
+}
+
+[class^="btn"] > * {
+    vertical-align: middle;
 }
 
 [class^="btn"]:hover {
@@ -71,11 +99,12 @@
     }
 
     .gallery {
-        width: 40%;
+        width: 30%;
+        height: 800px;
     }
 
     .wrapper {
-        width: 60%;
+        width: 70%;
     }
 }
 

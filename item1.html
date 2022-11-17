@@ -7,17 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/items.css">
+  <link rel="stylesheet" href="css/glightbox.min.css" />
+  <script src="js/glightbox.min.js"></script>
 </head>
 
 <body>
     <script>
       function openTab(tabId) {
-        var i, x;
-        x = document.getElementsByClassName("textcontainer");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
+        let elements = document.getElementsByClassName("textcontainer");
+        for (let element of elements){
+          element.style.display = 'none';
         }
-        document.getElementById(tabId).style.display = "inline-block";
+        document.getElementById(tabId).style.display = 'inline-block';
       }
     </script>
 
@@ -25,16 +26,30 @@
 
     <main>
       <div class="content">
-        <div class="gallery"><p>This is gallery</p></div> <!-- TODO image gallery-->
+        <div class="gallery"> <!-- TODO image gallery-->
+          <div class="imgcontainer">
+            <a href="img/c1/big/b1.jpg" class="glightbox1" data-gallery="gallery1" data-glightbox="title: Motherboard general appearance; description: My description"><img src="img/c1/b1.jpg" alt="image"/></a>
+            <!--<div class="imgoverlay"><p>Overlay</p></div>-->
+          </div>
+          <div class="imgcontainer">
+            <a href="img/c1/big/b2.jpg" class="glightbox1" data-gallery="gallery1" data-glightbox="title: IO backplate"><img src="img/c1/b2.jpg" alt="image"/></a>
+          </div>
+          <div class="imgcontainer">
+            <a href="img/c1/big/b3.jpg" class="glightbox1" data-gallery="gallery1" data-glightbox="title: CPU cooler and VRM"><img src="img/c1/b3.jpg" alt="image"/></a>
+          </div>
+          <div class="imgcontainer">
+            <a href="img/c1/big/p1.jpg" class="glightbox1" data-gallery="gallery1" data-glightbox="title: Power supply PCB"><img src="img/c1/p1.jpg" alt="image"/></a>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="navbar">
             <div class="nav">
-              <button class="btn-back" onclick="location.href='index.html#item1';"><img src="img/back.png"></button>
+              <button class="btn-back" onclick="location.href='index.html#item1';" title="Return to main"><img src="img/back.png"></button>
               <h3>WindRover LP2001</h3>
             </div>
             <div class="tabcontrols">
-              <button class="btn-tab" onclick="openTab('nfo');"><img src="img/book.png"></button>
-              <button class="btn-tab" onclick="openTab('fls');"><img src="img/down.png"></button>
+              <button class="btn-tab" onclick="openTab('nfo');" title="View information"><img src="img/book.png"> Info</button>
+              <button class="btn-tab" onclick="openTab('fls');" title="Download relevant files"><img src="img/down.png"> Files</button>
             </div>
           </div>
           <div class="textcontainer" id="nfo">
@@ -47,7 +62,18 @@
       </div>
     </main>
 
-    <footer><div class="footer"><p>Alexander Korostelin, 2022</p></div></footer>
+    <footer>
+      <div class="footer">
+        <p>Alexander Korostelin, 2022<br>
+          The website uses <a href="https://biati-digital.github.io/glightbox/" target="_blank">GLightbox</a>, distributed under the MIT license. Icons by <a href="https://icons8.com/" target="_blank">Icons8</a>.</p>
+      </div>
+      <script type="text/javascript">
+        const lightbox = GLightbox({
+            selector:  '.glightbox1',
+            loop: true,
+        });
+        </script>
+    </footer>
 </body>
 
 </html>
