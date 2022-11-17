@@ -51,6 +51,7 @@
 
 .card > img {
   object-fit: scale-down;
+  padding: 2px;
   height: 95%;
   width: 50%;
   margin-right: 20px;
@@ -69,16 +70,15 @@
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
   .infosection{
-    max-width: 400px;
+    max-width: 600px;
   }
 
   .card{
-    width: 240px;
+    width: 300px;
     flex-direction: column;
   }
 
   .card > img {
-    object-fit: scale-down;
     height: 180px;
     width: 95%;
     margin: 0 auto;
@@ -86,8 +86,8 @@
 }
 
 /* Big screens */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
   .content{
-      width: 1200px;
+      width: 1400px;
   }
 }
