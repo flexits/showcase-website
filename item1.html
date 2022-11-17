@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <script>
+    <script type="text/javascript">
       function openTab(tabId) {
-        let elements = document.getElementsByClassName("textcontainer");
+        let elements = document.getElementsByClassName('textcontainer');
         for (let element of elements){
           element.style.display = 'none';
         }
@@ -82,10 +82,24 @@
           Icons by <a href="https://icons8.com/" target="_blank">Icons8</a>.</p>
       </div>
       <script type="text/javascript">
+        //lightbox init
         const lightbox = GLightbox({
             selector:  '.glightbox1',
             loop: true,
         });
+        //set gallery height according to the left page part content
+        function adjustGallery(mqlist){
+          let gallery = document.getElementById('gallery');
+          if (mqlist.matches) {
+            let rheight = document.getElementById('wrapper').offsetHeight;
+            gallery.style.height = rheight+'px';
+          } else {
+            gallery.style.height = 'auto';
+          }
+        }
+        let mqlist = window.matchMedia("(min-width: 600px)");
+        adjustGallery(mqlist);
+        mqlist.addListener(adjustGallery);
         </script>
     </footer>
 </body>
