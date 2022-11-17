@@ -20,6 +20,7 @@
 }
 
 .imgcontainer {
+    position: relative;
     border: 1px solid var(--olive-green);
 }
 
@@ -29,11 +30,11 @@
 }
 
 .imgoverlay {
-    /*position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;*/
-    background-color: #008CBA;
+    right: 0;
+    background-color: rgba(254, 250, 224, 0.7);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -41,7 +42,11 @@
 }
 
 .imgcontainer:hover .imgoverlay {
-    height: 30%;
+    height: 54px;
+}
+
+.imgoverlay p {
+    padding-left: 10px;
 }
 
 .navbar {
