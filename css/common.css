@@ -35,7 +35,8 @@ header, footer {
     margin-bottom: 64px;
 }
 
-#head-content > h1 {
+#head-content > a, h1 {
+    text-decoration: none;
     color: var(--cornsilk);
     text-align: center;
 }
@@ -58,7 +59,7 @@ header, footer {
 
 /* Non-mobile screens */
 @media only screen and (min-width: 600px) {
-    #head-content > h1{
+    #head-content > a, h1{
         padding-left: 10%;
         text-align: left;
     }
