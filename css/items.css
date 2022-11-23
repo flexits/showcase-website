@@ -92,8 +92,11 @@
 }
 
 .textcontainer {
-    margin-top: 20px;
-    padding: 10px;
+    padding: 0 10px;
+}
+
+.textcontainer p {
+    margin-bottom: 0;
 }
 
 .textcontainer table {
