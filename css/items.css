@@ -93,6 +93,7 @@
 
 .textcontainer {
     padding: 0 10px;
+    margin-bottom: 20px;
 }
 
 .textcontainer p {
@@ -126,6 +127,10 @@
     #wrapper {
         width: 55%;
         min-height: 500px;
+    }
+
+    .textcontainer {
+        margin-bottom: 0;
     }
 }
 
