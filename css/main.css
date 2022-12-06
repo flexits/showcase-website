@@ -76,3 +76,20 @@
       width: 1400px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .infosection{
+    background-color: var(--darkgray);
+    border-color: var(--dogs-brown);
+  }
+
+  .card{
+    background-color: var(--darkgray);
+    border-color: var(--dogs-brown);
+    box-shadow: 2px 2px var(--dogs-brown);
+  }
+  
+  .card:hover{
+    border-color: var(--olive-green);
+  }
+}

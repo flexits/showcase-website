@@ -7,6 +7,9 @@
     --corn-darker:  #f8f3cf;
     --earth-yellow: #DDA15E;
     --dogs-brown:   #BC6C25;
+
+    --darkgray:     #343434;
+    --darkergray:   #1B1B1B;
   }
 
 * {
@@ -62,5 +65,29 @@ header, footer {
     #head-content > a, h1{
         padding-left: 10%;
         text-align: left;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--darkergray);
+        color: var(--cornsilk);
+    }
+
+    h1, h2, h3 {
+        color: var(--earth-yellow);
+    }
+    
+    header, footer {
+        background-color: var(--darkgray);
+        color: var(--cornsilk);
+    }
+
+    #head-content > a, h1 {
+        color: var(--earth-yellow);
+    }
+
+    #foot-content a{
+        color: var(--cornsilk);
     }
 }

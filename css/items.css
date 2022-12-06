@@ -105,6 +105,10 @@
     width: 100%;
 }
 
+.textcontainer table tr p {
+    margin-bottom: 20px;
+}
+
 .textcontainer table tr:nth-child(even) {
     background-color: var(--corn-darker);
 }
@@ -141,3 +145,24 @@
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    .imgcontainer {
+        border-color: var(--dogs-brown);
+    }
+
+    .imgoverlay {
+        background-color: var(--darkgray);
+    }
+
+    [class^="btn"] {
+        color: var(--cornsilk);
+    }
+
+    [class^="btn"]:hover {
+        background-color: var(--darkgray);
+    }
+
+    .textcontainer table tr:nth-child(even) {
+        background-color: var(--darkgray);
+    }
+}
