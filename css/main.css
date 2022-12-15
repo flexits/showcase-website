@@ -46,7 +46,7 @@
 
 .card > img {
   object-fit: scale-down;
-  padding: 2px;
+  padding: 20px;
   height: 95%;
   width: 50%;
   margin-right: 20px;
