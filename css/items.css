@@ -72,7 +72,6 @@
     text-align: center;
     display: inline-block;
     background-color: transparent;
-    padding: 8px 24px;
     border: none;
     transition-duration: 0.3s;
     cursor: pointer;
@@ -88,7 +87,19 @@
 }
 
 .btn-back {
-    padding: 8px 0px;
+    padding: 8px 10px;
+}
+
+.btn-tab {
+    padding: 8px 24px;
+}
+
+[class^="btn"] > img, .img-dwn {
+    filter: var(--kombu-green-filter);
+}
+
+[class^="btn"]:hover > img {
+    filter: var(--cornsilk-filter);
 }
 
 .textcontainer {
@@ -155,11 +166,15 @@
     }
 
     [class^="btn"] {
-        color: var(--cornsilk);
+        color: var(--earth-yellow);
     }
 
     [class^="btn"]:hover {
         background-color: var(--darkgray);
+    }
+
+    [class^="btn"] > img, .img-dwn {
+        filter: var(--earth-yellow-filter);
     }
 
     .textcontainer table tr:nth-child(even) {

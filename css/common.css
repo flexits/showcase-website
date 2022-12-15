@@ -10,6 +10,13 @@
 
     --darkgray:     #343434;
     --darkergray:   #1B1B1B;
+
+    --olive-green-filter: invert(41%) sepia(8%) saturate(2321%) hue-rotate(33deg) brightness(91%) contrast(84%);
+    --kombu-green-filter: invert(15%) sepia(40%) saturate(723%) hue-rotate(46deg) brightness(90%) contrast(87%);
+    --cornsilk-filter: invert(99%) sepia(98%) saturate(365%) hue-rotate(313deg) brightness(104%) contrast(99%);
+    --corn-darker-filter: invert(95%) sepia(74%) saturate(358%) hue-rotate(315deg) brightness(105%) contrast(94%);
+    --earth-yellow-filter: invert(68%) sepia(56%) saturate(392%) hue-rotate(349deg) brightness(90%) contrast(91%);
+    --dogs-brown-filter: invert(42%) sepia(73%) saturate(588%) hue-rotate(347deg) brightness(96%) contrast(81%);
   }
 
 * {
